@@ -10,19 +10,36 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 0.6875rem; text-align: center; }
+    @font-face {
+      font-family: 'Outfit';
+      src: url(./fonts/Outfit-VariableFont_wght.ttf) format('truetype');
+      font-weight: 400 700;
+    }
+
+    .attribution { font-size: 0.6875rem; text-align: center; padding-top: 4px }
     .attribution a { color: hsl(228, 45%, 44%); }
+    body {display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; background-color: #D5E1EF}
+    .card {background-color: white; border-radius: 20px; width: 90%; max-width: 320px; box-sizing: border-box; padding: 16px; box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1)}
+    img {width: 100%; display: block; border-radius: 20px}
+    h1, p {text-align: center}
+    h1 {font-family: 'Outfit'; color: #1F314F; font-size: 22px; line-height: 120%; font-weight: 700}
+    p {font-family: 'Outfit'; color: #68778D; font-size: 15px; line-height: 140%; font-weight: 400}
   </style>
 </head>
 <body>
 
-  Improve your front-end skills by building projects
+  <div class="card">
+    <img src="./images/image-qr-code.png" alt="QR Code"/>
 
-  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+    <h1>Improve your front-end skills by building projects</h1>
+
+    <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+
+  </div>
   
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Vivian Vu</a>.
   </footer>
 </body>
 </html>
